@@ -1,6 +1,12 @@
 name: Pytest with Pipenv & Docker
-# workflow triggered by any push on any branch
-on: [push]
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main","new-ci-workflow"]
+  pull_request:
+    branches: [ "main","new-ci-workflow"]
+    
 jobs:
   build:
     name: Pytest in Pipenv
