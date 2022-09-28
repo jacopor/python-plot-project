@@ -6,6 +6,3 @@ def test_var_is_positive():
     assert std > 0
     
 #test_var_is_positive()
-
-##
-######
